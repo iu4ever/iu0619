@@ -1,5 +1,10 @@
 package ineo.advanced.generic;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+
 public class GenericTest {
     //这个类是个泛型类，在上面已经介绍过
     public class Generic<T>{
@@ -70,9 +75,41 @@ public class GenericTest {
      }
      */
 
-    public static void main(String[] args) {
+    public static void simple_1() {
+        List<Integer> integerList = new ArrayList<>();
+        integerList.add(2);
+        //integerList.add("2");//这里将会报编译错误
+    }
 
+    /**
+     * 这个方法值得注意一下
+     * @throws NoSuchMethodException
+     * @throws InvocationTargetException
+     * @throws IllegalAccessException
+     */
+    public static void simple_2() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        List<?> list = new ArrayList<>();
+        //list.add("sd");//这句无法编译
+        Method method = list.getClass().getMethod("add", Object.class);
+        method.invoke(list,"1");
+        method.invoke(list,1);
+        for (Object o : list) {
+            System.out.println(o.getClass());
+        }
+    }
+
+
+    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+
+        Generic_5 generic_5 = new Generic_5(5);
+        //此行无法编译通过。因为typeBound_5只接受Number类型的参数。
+        //generic_5.typeBound_5("niu");
+        generic_5.typeBound_5(1);
+        generic_5.typeBound_5(0.3);
+        simple_2();
 
     }
+
+
 }
 

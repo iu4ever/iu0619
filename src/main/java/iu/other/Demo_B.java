@@ -12,9 +12,14 @@ public class Demo_B extends Demo_A {
         System.out.println("陈情令"+this.getName());
     }
 
+
+
+
+
     public static void main(String[] args) {
         Demo_A a = new Demo_A();
         //不能访问A里面的实例化protected方法。
         //a.sum();
+
     }
 }

@@ -5,7 +5,7 @@ import java.io.*;
 public class Courage {
     public static void borealis() throws IOException{
         //我来在这个方法里Read吧
-        String str = "C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\2020-07-11测试文件.txt";
+        String str = "C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\2020-07-11测试文件.txt";
         DataInputStream dataInputStream = new DataInputStream(new FileInputStream(str));
         String s = dataInputStream.readUTF();
         System.out.println(s);
@@ -14,7 +14,7 @@ public class Courage {
     }
     public static void australis() throws IOException{
         //
-        String str = "C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\2020-07-11测试文件.txt";
+        String str = "C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\2020-07-11测试文件.txt";
         DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream(str));
         dataOutputStream.writeUTF("上面的readUTF()要和这儿的writeUTF()配合使用的。否则汇报异常。");
         //他给我在写入上面的这句话“上面的readUTF()要和这儿的writeUTF()配合使用的。否则汇报异常。”的时候把原来里面的内容给删了。~

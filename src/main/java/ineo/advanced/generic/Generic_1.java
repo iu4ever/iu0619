@@ -3,6 +3,7 @@ package ineo.advanced.generic;
 public class Generic_1 {
 
     public static <E> void printArray(E[] array) {
+
         for (E element : array) {
             System.out.printf("%s *_*\t",element);//1	2	3	4
         }

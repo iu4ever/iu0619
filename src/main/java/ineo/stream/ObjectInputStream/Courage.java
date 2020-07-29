@@ -12,7 +12,7 @@ public class Courage {
         try {
             //现在我要去读刚刚存进去那个文件里的东西，
             //C:\Users\niu\Desktop\Java\我的工作空间\2020-07-12-01测试文件.txt
-            FileInputStream fileInputStream = new FileInputStream("C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\2020-07-12-01测试文件.txt");
+            FileInputStream fileInputStream = new FileInputStream("C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\2020-07-12-01测试文件.txt");
             //我又需要ObjectInputStream
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
             //这儿我们没法出判断文件里面有多少个people 。所以只能全部循环

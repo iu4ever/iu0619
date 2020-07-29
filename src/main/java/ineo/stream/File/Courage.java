@@ -214,18 +214,18 @@ public class Courage {
 
     public static void main(String[] args) throws Exception {
         Courage courage = new Courage();
-        String path = "C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\CreateFolder\\1\\2\\1.txt";
-        //courage.createFolder("C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\CreateFolder\\1\\2");
+        String path = "C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\CreateFolder\\1\\2\\1.txt";
+        //courage.createFolder("C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\CreateFolder\\1\\2");
         courage.createFile(path,"我爱你中国");
         //courage.deleteFolder(path.substring(0,path.lastIndexOf("\\")));
         //courage.deleteFile(path);
 
-        String str1 = "C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\Someone_Like_You.md";
-        String str2 = "C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\File_someone_like_you.txt";
+        String str1 = "C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\Someone_Like_You.md";
+        String str2 = "C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\File_someone_like_you.txt";
         //courage.copyFile(str1,str2);
 
-        String str3 = "C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\CreateFolder\\1";
-        String str4 = "C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\CreateFolder\\copyFolder";
+        String str3 = "C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\CreateFolder\\1";
+        String str4 = "C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\CreateFolder\\copyFolder";
         courage.copyFolder(str3,str4);
 
     }

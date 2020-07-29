@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 public class Courage {
     public static void main(String[] args) throws Exception
     {
-        String filename = "C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\PrintWriter.txt";
+        String filename = "C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\PrintWriter.txt";
         /*
          * PrintWriter(Writer out)
          * Creates a new PrintWriter, without automatic line flushing.

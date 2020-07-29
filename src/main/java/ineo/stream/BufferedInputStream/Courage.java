@@ -7,8 +7,8 @@ public class Courage {
     public void aurora() {
         try {
             //我们先来定义两个文件
-            File fileIn = new File("C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\2020-07-12测试源图片.jpg");
-            File fileOut = new File("C:\\Users\\niu\\Desktop\\Java\\我的工作空间\\2020-07-12测试输出图片.jpg");
+            File fileIn = new File("C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\2020-07-12测试源图片.jpg");
+            File fileOut = new File("C:\\Users\\niu\\Desktop\\Java\\Repository\\neo\\MyWorkSpace\\2020-07-12测试输出图片.jpg");
             if (!fileOut.exists()) {
                 fileOut.createNewFile();
             }
